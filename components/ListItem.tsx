@@ -2,6 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import React from "react";
+import Image from "next/image"
 
 interface ListItemProps {
   image: string;
@@ -36,7 +37,9 @@ const ListItem: React.FC<ListItemProps> = ({ image, name, href }) => {
       relative
       min-h-[64px]
       min-w-[64]px"
-      ></div>
+      >
+      <Image />
+      </div>
     </button>
   );
 };
