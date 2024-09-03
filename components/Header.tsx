@@ -88,11 +88,12 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
           rounded-full
           p-2
           bg-white
+          flex-shrink-0
           flex
-          itens-center
+          items-center
           justify-center
           hover:opacity-75
-          trasition"
+          transition"
           >
             <HiHome className="text-black" size={20} />
           </button>
@@ -100,14 +101,15 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
             className="
             rounded-full
             p-2
+            flex-shrink-0
             bg-white
             flex
-            itens-center
+            items-center
             justify-center
             hover:opacity-75
-            trasition"
+            transition"
           >
-            <BiSearch className="text-black" size={20} />
+            <BiSearch className="text-black " size={20} />
           </button>
         </div>
         <div
@@ -119,11 +121,32 @@ const Header: React.FC<HeaderProps> = ({ children, className }) => {
         >
           <>
             <div>
-              <Button>Sing up</Button>
+              <Button
+                onClick={() => {}}
+                className="
+              bg-transparent
+              text-neutral-300
+              font-medium"
+              >
+                Sign up
+              </Button>
+            </div>
+            <div>
+              <Button
+                onClick={() => {}}
+                className="
+
+                bg-white
+                px-6
+                py-2"
+              >
+                Log in
+              </Button>
             </div>
           </>
         </div>
       </div>
+      {children}
     </div>
   );
 };
