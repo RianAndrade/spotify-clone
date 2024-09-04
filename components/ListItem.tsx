@@ -2,7 +2,7 @@
 
 import { useRouter } from "next/navigation";
 import React from "react";
-import Image from "next/image"
+import Image from "next/image";
 
 interface ListItemProps {
   image: string;
@@ -11,7 +11,7 @@ interface ListItemProps {
 }
 
 const ListItem: React.FC<ListItemProps> = ({ image, name, href }) => {
-  const router = useRouter;
+  const router = useRouter();
   const onClick = () => {
     //add autentication before
     router.push(href);
@@ -34,11 +34,13 @@ const ListItem: React.FC<ListItemProps> = ({ image, name, href }) => {
     >
       <div
         className="
-      relative
-      min-h-[64px]
-      min-w-[64]px"
+        relative
+        min-h-[64px]
+        min-w-[64px]
+        h-16
+        w-16"
       >
-      <Image />
+        <Image className="object-cover" fill src={image} alt="image" />
       </div>
     </button>
   );

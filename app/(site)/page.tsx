@@ -1,5 +1,6 @@
 import Header from "@/components/Header";
 import ListItem from "@/components/ListItem";
+
 export default function Home() {
   return (
     <div
@@ -32,7 +33,11 @@ export default function Home() {
           gap-3
           mt-4"
           >
-            <ListItem />
+            <ListItem
+              image="/images/liked.png"
+              name="Liked Songs"
+              href="/liked-songs"
+            />
           </div>
         </div>
       </Header>
