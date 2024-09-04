@@ -42,6 +42,7 @@ const ListItem: React.FC<ListItemProps> = ({ image, name, href }) => {
       >
         <Image className="object-cover" fill src={image} alt="image" />
       </div>
+      <p className="medium">{name}</p>
     </button>
   );
 };
