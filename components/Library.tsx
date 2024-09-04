@@ -43,7 +43,7 @@ const Library = () => {
           px-3"
       >
         {" "}
-        List YouR Songs
+        List of Songs!
       </div>
     </div>
   );
